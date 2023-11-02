@@ -1,38 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+      <!-- Required meta tags -->
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="style.css">
-   <title>Training Form</title>
+
+      <!-- Bootstrap CSS -->
+      <link href="assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+      <link rel="stylesheet" href="assets/css/style.css">
+
+   <title>Marah Resturant</title>
 </head>
 
 <body>
-   <div class="container">
-      <div class="tarining_form">
-         <form id="form">
-            <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname" required><br>
-            <label for="phone">Phone Number:</label><br>
-            <input type="number" id="phone" required><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" required><br>
-            <label for="major">Major:</label><br>
-            <input type="text" id="major" required><br>
-            <label for="train">Training Area:</label><br>
-            <select id="train" name="train">
-               <option value="Database Management">Database Management</option>
-               <option value="Artificial Intelligence">Artificial Intelligence</option>
-               <option value="Web Development">Web Development</option>
-            </select><br>
-            <input class="submit" type="submit" value="submit">
-         </form>
-         <p id="message" style="display: none;"> Thank you for filling the form </p>
+
+   <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid">
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarText">
+         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+               <a class="nav-link active" aria-current="page" href="#">Marah Resturant</a>
+            </li>
+         </ul>
+            <a class="navbar-text" href="createAccount.html">
+               Create Account
+            </a>
+         </div>
       </div>
+   </nav>
+
+   <div class="container">
+         <div class="home_content">
+            <h1>Welcome to Marah Resturant</h1>
+            <p>Indulge in a culinary journey that tantalizes your taste buds. At Marah Restaurant, we take pride in serving you the finest dishes prepared with love and the freshest ingredients. Our diverse menu offers a wide range of flavors, from traditional favorites to modern creations, all crafted to perfection by our talented chefs.</p>
+            <p>Explore our menu, discover our specialties, and make a reservation to savor an unforgettable culinary adventure at Marah Restaurant. We can't wait to serve you!</p>
+            <div style="display: flex; justify-content: center;">
+               <button> <a href="createAccount.html" class="nav-link" >Create Account </a> </button>
+            </div>
+         </div>
+         <div class="home_background">
+         </div>
    </div>
    
-   <script src="script.js"></script>
 </body>
 </html>
+
