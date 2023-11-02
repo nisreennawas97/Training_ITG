@@ -10,26 +10,37 @@
 <body>
    <div class="container">
       <div class="tarining_form">
-         <form id="form">
-            <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname" required><br>
-            <label for="phone">Phone Number:</label><br>
-            <input type="number" id="phone" required><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" required><br>
-            <label for="major">Major:</label><br>
-            <input type="text" id="major" required><br>
-            <label for="train">Training Area:</label><br>
-            <select id="train" name="train">
+         <form id="register_form">
+            <label for="student_fname">First name:</label><br>
+            <input type="text" id="student_fname" name="student_fname"><br>
+            <span id="register_fnameError" class="error-message"></span><br>
+
+            <label for="student_lname">Last name:</label><br>
+            <input type="text" id="student_lname" name="student_lname" ><br>
+            <span id="register_lnameError" class="error-message"></span><br>
+
+            <label for="student_phone">Phone Number:</label><br>
+            <input type="number" id="student_phone" ><br>
+            <span id="register_phoneError" class="error-message"></span><br>
+
+            <label for="student_email">Email:</label><br>
+            <input type="text" id="student_email" ><br>
+            <span id="register_emailError" class="error-message"></span><br>
+
+            <label for="student_major">Major:</label><br>
+            <input type="text" id="student_major" ><br>
+            <span id="register_majorError" class="error-message"></span><br>
+
+            <label for="student_train">Training Area:</label><br>
+            <select id="student_train" name="student_train">
                <option value="Database Management">Database Management</option>
                <option value="Artificial Intelligence">Artificial Intelligence</option>
                <option value="Web Development">Web Development</option>
             </select><br>
+
             <input class="submit" type="submit" value="submit">
          </form>
-         <p id="message" style="display: none;"> Thank you for filling the form </p>
+         <p id="register_message" style="display: none;"> Thank you for filling the form </p>
       </div>
    </div>
    

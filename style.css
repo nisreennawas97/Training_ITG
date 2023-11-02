@@ -37,7 +37,6 @@ form input,
 form select {
     width: 80%;
     padding: 10px;
-    margin-bottom: 10px;
     border: none;
     border-radius: 5px;
     background: rgba(0, 0, 0, 0.174);
@@ -56,11 +55,11 @@ form option{
     border-radius: 5px;
     cursor: pointer;
     width: 40%;
-
+    margin-top: 20px;
 }
 
 .submit:hover {
-    background-color: #181f2663;
+    background-color: rgba(15, 16, 17, 0.758);
 }
 
 #message {
@@ -70,4 +69,10 @@ form option{
     display: none;
     font-size: 1.5em;
     font-weight: bold;
+}
+
+.error-message{
+    color: red;
+    font-size: 10px;
+    margin-bottom: 10px;
 }
